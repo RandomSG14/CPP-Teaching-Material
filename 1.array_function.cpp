@@ -10,7 +10,7 @@ int main()
     
     string name = "Sora";
     int gear[4] = {1,2,3,4};
-    int inventory[4] = {5,6,7,8};
+     int inventory[2][3] = {5,6,7,8,9,0};
     
     //int* itemTag = gear;
     
@@ -55,7 +55,10 @@ void displayItem(int gear[], int inventory[])
      cout << "Inventory : " << endl;
      for (int count = 0; count < 4; count++)
     {
-        cout << "[" << count+1 << "]" <<  inventory[count] << endl;
+         for (int count_column = 0; count_column < 3; count_column++)
+        {
+            cout << inventory[count][count_column] ;
+        }
     }
     
     cout << "\n\n";
