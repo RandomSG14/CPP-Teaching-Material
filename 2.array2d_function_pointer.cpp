@@ -125,7 +125,7 @@ void swapItem(int gear[], int (*inventory)[col_array])
     
     
     // selecting which array depend on user input
-
+    // Note : there's logic error after this line, try to find out
     if(select_inventory >= 1 && select_inventory <= 3)
         {
             //* This is old way to swap values , using temp. use this if programmer forgot to include <utilities>
